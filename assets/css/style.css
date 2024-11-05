@@ -1,0 +1,151 @@
+/* Styles for the body of the page */
+body {
+    --s: 100px; /* Controls the size of the pattern */
+    --c1: #008cff;
+    --c2: #1b1b3a;
+
+    /* Gradient pattern definition for the background */
+    --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+          var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, 
+          var(--c2) 66% 74%, var(--c1) 76% 84%, var(--c2) 86% 94%;
+
+    background: 
+        radial-gradient(
+            100% 100% at 100% 0, /* Gradient position adjustment */
+            var(--c1) 4%, var(--_g), #0008 96%, #0000
+        ),
+        radial-gradient(
+            100% 100% at 0 100%, /* Another position adjustment */
+            #0000, #0008 4%, var(--_g), var(--c1) 96%
+        ) var(--c1);
+
+    background-size: var(--s) var(--s); /* Pattern size */
+    background-attachment: fixed; /* Fix background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Styles for the header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-size: 28px;
+}
+
+/* Main style to center the sections */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns to the top */
+    width: 100%; /* Full width of the screen */
+    gap: 20px; /* Space between child elements */
+    flex-grow: 1; /* Makes the main grow and occupy remaining space */
+    padding: 20px; /* Adding padding to main */
+}
+
+/* Styles for the form section */
+#form-section {
+    flex: 0 0 40%; /* Defines that the form section will occupy 40% of the width */
+    padding: 30px; /* Increased padding */
+    margin: 0 10px; /* Side margins to separate from the edge */
+    overflow: hidden; /* Hides overflow to maintain appearance */
+}
+
+/* Styles for the user list */
+#list-section {
+    flex: 0 0 30%; /* Defines that the list will occupy 55% of the width */
+    background-color: #171717; /* Dark background for the form */
+    margin-bottom: 1em; /* Adjusting bottom margin */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Increased padding */
+    margin: 0 10px; /* Side margins to separate from the edge */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth animation */
+    border: 3px solid transparent; /* No visible border initially */
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.5); /* Shadow */
+}
+
+#list-section:focus-within {
+    border-color: #00d9ff; /* Activates the border in aqua */
+    box-shadow: 0 0 15px rgba(0, 225, 255, 0.5); /* Shadow around */
+}
+
+/* Styles for the form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding: 2em; /* Increasing internal padding of the form */
+    background-color: #171717; /* Dark background for the form */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth animation */
+    border: 3px solid transparent; /* No visible border initially */
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.5); /* Shadow */
+}
+
+form:focus-within {
+    border-color: #00d9ff; /* Activates the border in aqua */
+    box-shadow: 0 0 15px rgba(0, 225, 255, 0.5); /* Shadow around */
+}
+
+/* Form title */
+.form-heading {
+    text-align: center;
+    margin: 0; /* Removing margins to adjust space */
+    color: #64ffda;
+    font-size: 1.5em; /* Increasing font size */
+}
+
+/* Form fields */
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717; /* Field color */
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+/* Input field */
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+}
+
+/* Send button */
+.sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 1em; /* Adjusting bottom margin */
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 1px solid #64ffda;
+    transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+    background-color: #64ffda;
+    color: #000;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
