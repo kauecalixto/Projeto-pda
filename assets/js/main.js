@@ -127,5 +127,6 @@ async function getAddressByCEP() {
     }
 }
 
+
 // Create an instance of UserManager
 const userManager = new UserManager();
