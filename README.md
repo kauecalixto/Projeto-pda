@@ -64,11 +64,11 @@ Contribuições são bem-vindas! Se você deseja contribuir, siga as etapas abai
 
 ## Licença
 
-Este projeto está licenciado sob a [MIT License](KaueCalixto).
+Este projeto está licenciado sob a [MIT License](kauecalixto).
 
 ## Contato
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
-- **Seu Nome** - kaue.santos.calixto@gmail.com
+-  kaue.santos.calixto@gmail.com
 - **GitHub** - [kauecalixto](https://github.com/kauecalixto/projetopda.github.io.git)
