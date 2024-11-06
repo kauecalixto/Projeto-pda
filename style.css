@@ -30,12 +30,46 @@ body {
 
 /* Styles for the header */
 header {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
-    color: #343a40;
-    font-size: 28px;
-}
-
+    color: #ffffff; /* Cor do texto vibrante */
+    padding: 20px;
+    position: relative;
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    text-shadow: 3px 3px 6px rgba(92, 1, 1, 0.3); /* Sombra para dar profundidade ao texto */
+  }
+  
+  header:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #00e1ff; /* Linha abaixo do texto em vermelho */
+    border-radius: 2px;
+    position: absolute;
+    bottom: 20px; /* Linha abaixo do texto */
+    left: 50%;
+    margin-left: -30px;
+    animation: pulse 1.5s ease-in-out infinite; /* Animação sutil */
+  }
+  
+  /* Animação para a linha */
+  @keyframes pulse {
+    0% {
+      transform: scaleX(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scaleX(1.5);
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 0.5;
+    }
+  }
 /* Main style to center the sections */
 main {
     display: flex;
