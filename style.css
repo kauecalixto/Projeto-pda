@@ -28,7 +28,7 @@ body {
     height: 100vh;
 }
 
-/* Styles for the header */
+/** Styles for the header **/
 header {
     font-size: 20px;
     font-weight: 700;
@@ -70,7 +70,7 @@ header {
       opacity: 0.5;
     }
   }
-  
+
  /* Main style to center the sections */
 main {
     display: flex;
