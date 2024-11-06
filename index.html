@@ -20,53 +20,51 @@
         </section>
 
         <section id="form-section">
-            <!-- **Adicionando a classe de cartão ao formulário** -->
-            <div class="form-section-card1">
-                <form id="user-form" class="form" onsubmit="userManager.addUser(); return false;">
+            <article class="form-section-card1">
+                <form id="user-form" class="form" onsubmit="userManager.addUser (); return false;">
                     <div class="form-field">
                         <label for="name" id="label-name" class="form-label">Nome</label>
-                        <input type="text" id="name" class="input-field" required>
+                        <input type="text" id="name" class="input-field" required aria-required="true">
                     </div>
 
                     <div class="form-field">
                         <label for="sobreNome" id="label-sobrenome" class="form-label">Sobrenome</label>
-                        <input type="text" id="sobreNome" class="input-field" required>
+                        <input type="text" id="sobreNome" class="input-field" required aria-required="true">
                     </div>
 
                     <div class="form-field">
                         <label for="email" id="label-email" class="form-label">Email</label>
-                        <input type="email" id="email" class="input-field" required>
+                        <input type="email" id="email" class="input-field" required aria-required="true">
                     </div>
-
 
                     <div class="form-field">
                         <label for="cep" id="label-cep" class="form-label">CEP</label>
-                        <input type="text" id="cep" class="input-field" required onblur="getAddressByCEP()">
+                        <input type="text" id="cep" class="input-field" required aria-required="true" onblur="getAddressByCEP()">
                     </div>
 
                     <div class="form-field">
                         <label for="rua" id="label-rua" class="form-label">Rua</label>
-                        <input type="text" id="rua" class="input-field" readonly required>
+                        <input type="text" id="rua" class="input-field" readonly required aria-required="true">
                     </div>
 
                     <div class="form-field">
                         <label for="bairro" id="label-bairro" class="form-label">Bairro</label>
-                        <input type="text" id="bairro" class="input-field" readonly required>
+                        <input type="text" id="bairro" class="input-field" readonly required aria-required="true">
                     </div>
 
                     <div class="form-field">
                         <label for="cidade" id="label-cidade" class="form-label">Cidade</label>
-                        <input type="text" id="cidade" class="input-field" readonly required>
+                        <input type="text" id="cidade" class="input-field" readonly required aria-required="true">
                     </div>
 
                     <div class="form-field">
                         <label for="estado" id="label-estado" class="form-label">Estado</label>
-                        <input type="text" id="estado" class="input-field" required>
+                        <input type="text" id="estado" class="input-field" required aria-required="true">
                     </div>
 
                     <div class="form-field">
                         <label for="numero" id="label-numero" class="form-label">Número</label>
-                        <input type="text" id="numero" class="input-field" required>
+                        <input type="text" id="numero" class="input-field" required aria-required="true">
                     </div>
 
                     <div class="form-field">
@@ -76,7 +74,8 @@
 
                     <button type="submit" id="submit-btn" class="sendMessage-btn">Cadastrar</button>
                 </form>
-            </div>
+            </article>
+
 
 
 
@@ -146,7 +145,6 @@
         </section>
     </main>
 </body>
-<script src="assets/js/main.js"></script>
-</body>
-
+    <!-- main.js -->
+    <script src="assets/js/main.js"></script>
 </html>
