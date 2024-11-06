@@ -34,6 +34,7 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+<<<<<<< HEAD
     color: #ffffff; /* Cor do texto vibrante */
     padding: 20px;
     position: relative;
@@ -70,6 +71,13 @@ header {
       opacity: 0.5;
     }
   }
+=======
+    margin-bottom: 20px;
+    color: #e6f2ff;
+    font-size: 10px;
+}
+
+>>>>>>> 43e21fc386bb27803e302ee42bf3c4592b78f088
 /* Main style to center the sections */
 main {
     display: flex;
